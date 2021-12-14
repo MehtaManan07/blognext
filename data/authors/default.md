@@ -1,16 +1,13 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
+name: Gautam Singhvi
+avatar: /static/images/profile.jpg
+occupation: Assistant Professor, Department of Pharmacy
+company: BITS PILANI
+email: gautam.singhvi@pilani.bits-pilani.ac.in
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
-github: https://github.com
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Dr. Gautam Singhvi is working as Assistant Professor in Department of Pharmacy, BITS, Pilani. He has done his PhD from BITS, Pilani under the supervision of Prof. R.N. Saha. He has industrial research experience in solid oral Product Development, Process Development, Process Optimization, Process Scale-up and Technology Transfer. He has worked on immediate release and controlled release tablets, bilayer tablets, capsules and sachets and multi-particulate pellets formulations using extrusion and sphronization process for regulatory markets.. Currently he is working in the area of lipid based formulations and multi particulate drug delivery systems for selected drug candidates.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+He has personally worked and supervised development of modified release solid oral dosage forms for site specific delivery to GIT (gastro-retentive), micro- & nano-particulate drug delivery systems, liquisol technique, novel polymeric matrix based CR tablets and solubility & bioavailability enhancement platforms. He is also involved in pharmacokinetic studies of designed formulation and development of in-vitro in-vivo correlation.

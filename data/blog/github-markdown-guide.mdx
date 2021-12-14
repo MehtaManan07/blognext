@@ -1,198 +1,54 @@
 ---
-title: 'Markdown Guide'
+title: 'Depression'
 date: '2019-10-11'
-tags: ['github', 'guide']
+tags: ['depression', 'mental-disorders']
 draft: false
-summary: 'Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on Github Flavored Markdown.'
+summary: 'Causes of anxiety and how it can be cured for you today'
 ---
 
-# Introduction
+# Definition
 
-Markdown and Mdx parsing is supported via `unified`, and other remark and rehype packages. `next-mdx-remote` allows us to parse `.mdx` and `.md` files in a more flexible manner without touching webpack.
+Depression is a a negative affective state, ranging from unhappiness and discontent to
+an extreme feeling of sadness, pessimism, and despondency, that interferes with daily
+life. Various physical, cognitive, and social changes also tend to co-occur, including
+altered eating or sleeping habits, lack of energy or motivation, difficulty concentrating or
+making decisions, and withdrawal from social activities. It is symptomatic of a number of
+mental health disorders.
 
-Github flavored markdown is used. `mdx-prism` provides syntax highlighting capabilities for code blocks. Here's a demo of how everything looks.
+# Non scientific reasons
 
-The following markdown cheatsheet is adapted from: https://guides.github.com/features/mastering-markdown/
+- Abuse. Physical, sexual, or emotional abuse can make you more vulnerable to
+  depression later in life.
+- Age. People who are elderly are at higher risk of depression. That can be made
+  worse by other factors, such as living alone and having a lack of social support.
+- Certain medications. Some drugs, such as isotretinoin (used to treat acne), the
+  antiviral drug interferon-alpha, and corticosteroids, can increase your risk of
+  depression.
+- Conflict. Depression in someone who has the biological vulnerability to it may
+  result from personal conflicts or disputes with family members or friends.
+- Gender. Women are about twice as likely as men to become depressed. No
+  one's sure why. The hormonal changes that women go through at different times
+  of their lives may play a role.
+- Genes. A family history of depression may increase the risk. It's thought that
+  depression is a complex trait, meaning there are probably many different genes
+  that each exert small effects, rather than a single gene that contributes to
+  disease risk. The genetics of depression, like most psychiatric disorders, are not
+  as simple or straightforward as in purely genetic diseases such as Huntington's
+  chorea or cystic fibrosis.
+- Major events. Even good events such as starting a new job, graduating, or
+  getting married can lead to depression. So can moving, losing a job or income,
+  getting divorced, or retiring. However, the syndrome of clinical depression is
+  never just a "normal" response to stressful life events.
+- Other personal problems. Problems such as social isolation due to other
+  mental illnesses or being cast out of a family or social group can contribute to the
+  risk of developing clinical depression.
+- Serious illnesses. Sometimes, depression happens along with a major illness or
+  may be triggered by another medical condition.
+- Substance misuse. Nearly 30% of people with substance misuse problems also
+  have major or clinical depression. Even if drugs or alcohol temporarily make you
+  feel better, they ultimately will aggravate depression
 
-# What is Markdown?
+# How Nutraceuticals can solve it
 
-Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like `#` or `*`.
-
-# Syntax guide
-
-Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
-
-## Headers
-
-```
-# This is a h1 tag
-
-## This is a h2 tag
-
-#### This is a h4 tag
-```
-
-# This is a h1 tag
-
-## This is a h2 tag
-
-#### This is a h4 tag
-
-## Emphasis
-
-```
-_This text will be italic_
-
-**This text will be bold**
-
-_You **can** combine them_
-```
-
-_This text will be italic_
-
-**This text will be bold**
-
-_You **can** combine them_
-
-## Lists
-
-### Unordered
-
-```
-- Item 1
-- Item 2
-  - Item 2a
-  - Item 2b
-```
-
-- Item 1
-- Item 2
-  - Item 2a
-  - Item 2b
-
-### Ordered
-
-```
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-```
-
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-
-## Images
-
-```
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-Format: ![Alt Text](url)
-```
-
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-
-## Links
-
-```
-http://github.com - automatic!
-[GitHub](http://github.com)
-```
-
-http://github.com - automatic!
-[GitHub](http://github.com)
-
-## Blockquotes
-
-```
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-```
-
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
-## Inline code
-
-```
-I think you should use an
-`<addr>` element here instead.
-```
-
-I think you should use an
-`<addr>` element here instead.
-
-## Syntax highlighting
-
-Here’s an example of how you can use syntax highlighting with [GitHub Flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/):
-
-````
-```js:fancyAlert.js
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: '#foo' })
-  }
-}
-```
-````
-
-And here's how it looks - nicely colored with styled code titles!
-
-```js:fancyAlert.js
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: '#foo' })
-  }
-}
-```
-
-## Footnotes
-
-```
-Here is a simple footnote[^1]. With some additional text after it.
-
-[^1]: My reference.
-```
-
-Here is a simple footnote[^1]. With some additional text after it.
-
-[^1]: My reference.
-
-## Task Lists
-
-```
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-```
-
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-
-## Tables
-
-You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
-
-```
-| First Header                | Second Header                |
-| --------------------------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
-```
-
-| First Header                | Second Header                |
-| --------------------------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
-
-## Strikethrough
-
-Any word wrapped with two tildes (like `~~this~~`) will appear ~~crossed out~~.
+Current evidence supports adjunctive use of SAMe, methylfolate, omega-3, and vitamin
+D with antidepressants to reduce depressive symptoms.

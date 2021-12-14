@@ -1,76 +1,89 @@
 ---
-title: Images in Next.js
+title: Mental Disorders
 date: '2020-11-11'
-tags: ['next js', 'guide']
+tags: ['brain-health', 'mental-disorders']
 draft: false
-summary: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+summary: 'In this article we introduce various mental disorders.'
 authors: ['sparrowhawk']
 ---
 
 # Introduction
 
-The tailwind starter blog has out of the box support for [Next.js's built-in image component](https://nextjs.org/docs/api-reference/next/image) and automatically swaps out default image tags in markdown or mdx documents to use the Image component provided.
+In all countries of the world, the burden of mental diseases continues to rise, posing
+serious health risks as well as huge social, human rights, and economic ramifications.
 
-# Usage
+There are many various types of mental diseases, each with its own set of symptoms.
+They are characterized by a mix of anomalous thoughts, perceptions, emotions, behavior,
+and interpersonal connections.
 
-To use in a new page route / javascript file, simply import the image component and call it e.g.
+Depression, bipolar illness, schizophrenia and other psychoses, dementia, and
+developmental diseases such as autism are examples of mental disorders.
+Mental problems can be treated effectively, and the misery they cause can be alleviated.
+It is critical to have access to health care and social services that can provide treatment
+and social support.
 
-```js
-import Image from 'next/image'
+# 1.1 Depression
 
-function Home() {
-  return (
-    <>
-      <h1>My Homepage</h1>
-      <Image src="/me.png" alt="Picture of the author" width={500} height={500} />
-      <p>Welcome to my homepage!</p>
-    </>
-  )
-}
+Depression is a widespread mental illness that is also one of the leading causes
+of disability around the world. Depression affects an estimated 264 million
+individuals worldwide. Women are more likely to be affected than males.
 
-export default Home
-```
+Sadness, loss of interest or pleasure, feelings of guilt or low self-worth, interrupted
+sleep or food, weariness, and impaired concentration are all symptoms of
+depression. People who are depressed may also experience a variety of bodily
+ailments that have no obvious physical reason. Depression can be chronic or
+recurrent, limiting people's ability to function at work or school and cope with dayto-day living. Depression can lead to suicide in its most extreme form.
 
-For a markdown file, the default image tag can be used and the default `img` tag gets replaced by the `Image` component in the build process.
+There are also therapies that are effective. Talking therapies, such as cognitive
+behavior therapy or psychotherapy, can effectively cure mild to moderate
+depression. Antidepressants can be an effective treatment for mild to moderate
+depression, however they should not be used as the first line of treatment for mild
+depression. They should not be used to treat depression in children, and they
+should not be used as the first line of treatment in teenagers, who should be treated
+with caution
 
-Assuming we have a file called `ocean.jpg` in `data/img/ocean.jpg`, the following line of code would generate the optimized image.
+# 1.2 Bipolar Disorder
 
-```
-![ocean](/static/images/ocean.jpg)
-```
+Around 45 million people worldwide are affected by this disorder. It usually includes
+both manic and depressed episodes, with periods of normal mood in between.
+Manic episodes are characterized by a heightened or irritated mood, excessive
+activity, quick speech, increased self-esteem, and a reduced desire for sleep.
+Bipolar disorder can also be diagnosed in those who have manic episodes but
+don't have depressed episodes.
 
-Alternatively, since we are using mdx, we can just use the image component directly! Note, that you would have to provide a fixed width and height. The `img` tag method parses the dimension automatically.
+Effective therapies for the acute phase of bipolar disorder and the prevention of
+relapse are available. These are mood-stabilizing medications. The importance of
+psychosocial assistance in treatment cannot be overstated
 
-```js
-<Image alt="ocean" src="/static/images/ocean.jpg" width={256} height={128} />
-```
+# 1.3 Schizophreni
 
-_Note_: If you try to save the image, it is in webp format, if your browser supports it!
+Schizophrenia is a severe mental illness that affects 20 million individuals around
+the world. Disturbances in thinking, perception, emotions, language, sense of self,
+and behavior characterize psychoses, including schizophrenia. Hallucinations
+(hearing, seeing, or feeling things that aren't there) and delusions are common
+psychotic experiences (fixed false beliefs or suspicions that are firmly held even
+when there is evidence to the contrary). People with the disease may find it difficult
+to work or study normally.
 
-![ocean](/static/images/ocean.jpeg)
+Lack of access to health and social services can be caused by stigma and
+discrimination. In addition, people with psychosis are more likely to be subjected
+to human rights breaches, such as long-term institutionalization. Medicines and
+emotional assistance are effective treatments. Affected persons can live
+productive lives and integrate into society with the right therapy and social
+assistance.
 
-<p>
-  Photo by [YUCAR
-  FotoGrafik](https://unsplash.com/@yucar?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-  on
-  [Unsplash](https://unsplash.com/s/photos/sea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-</p>
+# 1.4 Dementia
 
-# Benefits
+Dementia affects around 50 million people worldwide. Dementia is a chronic or
+progressive disease in which cognitive function (i.e. the ability to process thoughts)
+deteriorates beyond what would be expected with normal aging. Memory,
+cognition, orientation, comprehension, computation, learning capacity, language,
+and judgment are all affected. Deterioration in emotional regulation, social
+behavior, or motivation is frequently associated with, and occasionally preceded
+by, cognitive impairment.
 
-- Smaller image size with Webp (~30% smaller than jpeg)
-- Responsive images - the correct image size is served based on the user's viewport
-- Lazy loading - images load as they are scrolled to the viewport
-- Avoids [Cumulative Layout Shift](https://web.dev/cls/)
-- Optimization on demand instead of build-time - no increase in build time!
-
-# Limitations
-
-- Due to the reliance of `next/image`, unless you are using an external image CDN like Cloudinary or Imgix, it is practically required to use Vercel for hosting. This is because the component acts like a serverless function that calls a highly optimized image CDN.
-
-  If you do not want to be tied to Vercel, you can remove `imgToJsx` in `remarkPlugins` in `lib/mdx.js`. This would avoid substituting the default `img` tag.
-
-  Alternatively, one could wait for image optimization at build time to be supported. A different library, [next-optimized-images](https://github.com/cyrilwanner/next-optimized-images) does that, although it requires transforming the images through webpack which is not done here.
-
-- Images from external links are not passed through `next/image`
-- All images have to be stored in the `public` folder e.g `/static/images/ocean.jpeg`
+Dementia is caused by a range of brain disorders and accidents, including
+Alzheimer's disease and stroke. While there is presently no cure for dementia or a
+way to slow its progression, many treatments are in various phases of scientific
+studies. However, there is much that can be done to help and improve the lives of
+people with dementia, as well as their caregivers and relatives

@@ -64,13 +64,13 @@ export default function Home({ posts }) {
                         </div>
                       </div>
                       <div className="text-base font-medium leading-6">
-                        <Link
+                        {/* <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
                           Read more &rarr;
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -91,11 +91,11 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      {siteMetadata.newsletter.provider !== '' && (
+      {/* {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
         </div>
-      )}
+      )} */}
     </>
   )
 }

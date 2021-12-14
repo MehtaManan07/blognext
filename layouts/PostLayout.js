@@ -88,11 +88,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
+                {/* <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link> */}
               </div>
               <Comments frontMatter={frontMatter} />
             </div>
@@ -112,7 +112,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 )}
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
-                    {prev && (
+                    {/* {prev && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           Previous Article
@@ -121,8 +121,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
-                    )}
-                    {next && (
+                    )} */}
+                    {/* {next && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           Next Article
@@ -131,7 +131,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 )}
               </div>
